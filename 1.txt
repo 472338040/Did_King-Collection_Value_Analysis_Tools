@@ -1,0 +1,51 @@
+一个品质有三个参数：
+品质的总格数(整数)
+品质的平均格数(两位小数)
+品质的总数(整数)
+
+需要满足的约束：
+品质总数等于品质总格数除品质平均格数。
+total_items= sum(    
+    red_count = None
+    orange_count = None
+    purple_count = None
+    blue_count = None
+    green_count = None
+    white_count = None
+) 1
+total_grids = sum(
+    red_total_grids = None
+    orange_total_grids = None
+    purple_total_grids = None
+    blue_total_grids = None
+    green_white_total_grids = None
+)
+
+其中0-5是回合数，从小到大我会得到的固定信息，其他的参数为随机得到。
+输入的参数有：
+    # 已知全场平均格数就填这里
+    total_avg = None 
+    total_grids = None
+    total_items = None 0
+
+    # 各品质平均格数
+    red_avg = None
+    orange_avg = None 1 -> 估算orange_total_grids 误差满足正负0.05，满足约束小于总件数
+    purple_avg = None 2 -> 估算purple_total_grids 误差满足正负0.05，满足约束小于总件数
+    blue_avg = None 3 -> 估算blue_total_grids 误差满足正负0.05，满足约束小于总件数
+    green_avg = None 2 -> 估算green_total_grids 误差满足正负0.05，满足约束小于总件数
+
+    # 各品质总格数
+    red_total_grids = None
+    orange_total_grids = None
+    purple_total_grids = None
+    blue_total_grids = None
+    green_white_total_grids = None 0  减去 估算green_total_grids得到white_total_grids->得到 red_total_grids
+
+    # 各品质件数
+    red_count = None
+    orange_count = None
+    purple_count = None
+    blue_count = None
+    green_count = None 1
+    green_white_count = None 5
